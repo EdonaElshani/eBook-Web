@@ -1,0 +1,262 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@500;600;700&family=Raleway:ital,wght@0,300;0,400;1,300&family=Roboto:ital,wght@0,400;0,700;1,500&family=Source+Sans+Pro&display=swap");
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  font-family: Roboto;
+  font-size: 1em;
+}
+/*ngjyrat: #4f1f4a,  #11d15f, #f2e5d0*/
+.container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto auto 10em auto 10em auto 5em 7em auto 7em auto auto 16em; 
+  gap: 1.1em;
+  max-width: 1080px;
+  margin: auto;
+  margin-top: 3em;
+}
+header {
+  grid-column: 1/6;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  color: #4f1f4a;
+}
+.logo {
+  width: 5vw;
+  height: 5vh;
+}
+.nav-links li {
+  display: inline-block;
+  padding: 0px 1em;
+  color: #4f1f4a;
+}
+.nav-links a,
+.kycu,
+.regjistrohu {
+  text-decoration: none;
+}
+.cta {
+  margin-left: auto;
+}
+.regjistrohu {
+  background-color: #11d15f;
+  color: white;
+  padding: 0.5em 1em;
+  margin: 0em 2em;
+}
+.header-section {
+  background-image: url(Fotografite/Foto/Header.png);
+  border-radius: 0.3em;
+  background-size: cover;
+  width: 100%;
+  height: 90vh;
+  grid-column: 1/6;
+  grid-row: 2/3;
+  color: #4f1f4a;
+}
+.header-section h1 {
+  font-size: 3rem;
+  margin-top: 4em;
+  text-transform: uppercase;
+}
+.header-section p {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.read-more {
+  width: 12vw;
+  height: auto;
+  padding: 1em;
+  color: #4f1f4a;
+  border: 2px solid #4f1f4a;
+  border-radius: 0.5em;
+  margin-top: .5em;
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+}
+.read-more:hover{
+  background-color: #4f1f4a;
+  color: #f2e5d0;
+  transition: all 0.3s ease;
+}
+
+.ne-trend,
+.me-te-shitur,
+.autoret-header,
+.kategorite
+{
+  grid-column: 1/6;
+  font-size: 2rem;
+  align-self: flex-end;
+  margin: 0.5em 0;
+  color: #1e1e1e;
+}
+.trend-book {
+  background-color: #f2e5d0;
+}
+.bestseller,
+.trend-book {
+  border-radius: 0.5em;
+  width: 12em;
+  height: auto;
+  padding: 1.5em;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 5%);
+}
+.trend-book a {
+  text-decoration: none;
+  color: #1e1e1e;
+  display: inline-block;
+  font-weight: bold;
+  margin-top: 1em;
+}
+.trend-book a:hover, .bestseller h3:hover {
+  color: #6e6d6d;
+}
+.bestseller {
+  background-color: #4f1f4a;
+  color: white;
+}
+.trend-book img,
+.bestseller img {
+  width: 8.75em;
+  height: auto;
+}
+.btn-shiko-librat {
+  grid-column: 1/6;
+  background-color: #11d15f;
+  justify-self: flex-end;
+  font-size: 1.5rem;
+  font-weight: 700;
+  border-radius: 0.5em;
+  width: 16vw;
+  height: 9vh;
+  align-self: flex-end;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+}
+.btn-shiko-librat a {
+  text-decoration: none;
+  color: white;
+  margin-top: 0.3em;
+}
+.arrow {
+  width: 0.6em;
+}
+.authors {
+  grid-column: 1/6;
+  display: flex;
+  justify-content: space-between;
+}
+.author img {
+  border-radius: 5em;
+  width: 158.461px;
+  height: 187.579px;
+
+}
+.author p {
+  text-align: center;
+  color: #3a3a3a;
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+.svg {
+  box-shadow: 0px 2px 2px rgb(172, 170, 170);
+  padding: 1.5em;
+  text-align: center;
+  height: 260.8px;
+  width: 185px;
+  font-size: 1.5em;
+  font-weight: 600;
+}
+.svg img {
+  width: 50px;
+  height: 55.5px;
+}
+.svg a {
+  margin-top: 4em;
+  text-decoration: none;
+  color: #1e1e1e;
+  display: inline-block;
+}
+.sale {
+  background-image: url(Fotografite/Foto/Zbritje.png);
+  border-radius: 0.3em;
+  background-size: cover;
+  grid-column: 1/6;
+  width: auto;
+  height: 60vh;
+  margin-top: 2em;
+  position: relative;
+}
+.email {
+  width: auto;
+  position: absolute;
+  right: 3.5em;
+  bottom: 11em;
+  display: flex;
+}
+.email-subscribe input[type="email"] {
+  width: 23vw;
+  height: 5vh;
+  border-radius: 0.5em 0em 0em 0.5em;
+  background-color: #f2e5d0;
+  padding-left: 1em;
+}
+.subscribe-btn {
+  background-color: #4f1f4a;
+  text-decoration: none;
+  border-radius: 0em 0.5em 0.5em 0em;
+  color: #f2e5d0;
+  padding: 0.5em;
+}
+footer {
+  margin-top: 1em;
+  grid-column: 1/6;
+  display: flex;
+  color: #1e1e1e;
+  justify-content: space-between;
+  padding: 1em;
+  border-top: 2px solid #4f1f4a;
+}
+.logo-footer {
+  width: 5vw;
+  height: 5vh;
+  margin-top: 0.8em;
+}
+.info-kompania {
+  width: 20%;
+  line-height: 1.5;
+}
+footer a {
+  display: block;
+  margin: 1em;
+  color: #1e1e1e;
+  text-decoration: none;
+}
+.kontakti-footer {
+  display: flex;
+  flex-direction: column;
+}
+.kontakti-footer h1,
+.social-media h1,
+.nav-footer h1 {
+  text-transform: uppercase;
+}
+.social-media {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.svg-footer {
+  width: 1em;
+}
+.svg-social-media {
+  width: 2em;
+}
+.nav-footer h1 {
+  margin-left: 0.8em;
+}
