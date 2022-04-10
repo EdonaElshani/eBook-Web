@@ -7,15 +7,20 @@
     <meta content="width=device-width, initial-scale=1" name="viewport" />
     <title>Ebooks</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="media_queries_index.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </head>
   <body>
     <div class="container">
       <header>
-        <img
-          src="Fotografite/SVG/Book-Logo.svg"
-          alt="logo"
-          class="logo"
-        />
+        <img src="Fotografite/SVG/Book-Logo.svg" alt="logo" class="logo" />
         <nav>
           <ul class="nav-links">
             <li><a href="index.html">Ballina</a></li>
@@ -35,77 +40,87 @@
       </div>
 
       <!--Librat ne trend-->
-      <h2 class="ne-trend">Në trend</h2>
-      <div class="zero-to-one trend-book">
-        <img src="Fotografite\Foto\Zero to one.png" alt="Zero to one book" />
-        <a href="book-info.html">Zero to one</a>
-        <p>Peter Thiel</p>
-      </div>
-      <div class="alchemist trend-book">
-        <img src="Fotografite\Foto\Alchemist.png" alt="Alchemist book" />
-        <a href="#">Alchemist</a>
-        <p>Paulo Coelho</p>
-      </div>
-      <div class="The-book-thief trend-book">
-        <img src="Fotografite\Foto\Book-thief.png" alt="The book thief book" />
-        <a href="#">The book thief</a>
-        <p>Markus Zusak</p>
-      </div>
-      <div class="Legend trend-book">
-        <img src="Fotografite\Foto\Legend.png" alt="Legend book" />
-        <a href="#">Legend</a>
-        <p>Marie Lu</p>
-      </div>
-      <div class="12-rules trend-book">
-        <img src="Fotografite\Foto\12-rules.png" alt="12 Rules for life book" />
-        <a href="#">12 Rules of life</a>
-        <p>Jordan Peterson</p>
+      <h2 class="ne-trend">Në trend tani:</h2>
+      <div class="popular-books">
+        <div class="zero-to-one first-item trend-book">
+          <img src="Fotografite\Foto\Zero to one.png" alt="Zero to one book" />
+          <a href="book-info.html">Zero to one</a>
+          <p>Peter Thiel</p>
+        </div>
+        <div class="alchemist second-item trend-book">
+          <img src="Fotografite\Foto\Alchemist.png" alt="Alchemist book" />
+          <a href="#">Alchemist</a>
+          <p>Paulo Coelho</p>
+        </div>
+        <div class="The-book-thief third-item trend-book">
+          <img
+            src="Fotografite\Foto\Book-thief.png"
+            alt="The book thief book"
+          />
+          <a href="#">The book thief</a>
+          <p>Markus Zusak</p>
+        </div>
+        <div class="Legend forth-item trend-book">
+          <img src="Fotografite\Foto\Legend.png" alt="Legend book" />
+          <a href="#">Legend</a>
+          <p>Marie Lu</p>
+        </div>
+        <div class="12-rules fifth-item trend-book">
+          <img
+            src="Fotografite\Foto\12-rules.png"
+            alt="12 Rules for life book"
+          />
+          <a href="#">12 Rules of life</a>
+          <p>Jordan Peterson</p>
+        </div>
       </div>
 
       <!--Librat me te shitur-->
-      <h2 class="me-te-shitur">Librat më të shitur</h2>
-      <div class="atomic-habits bestseller">
-        <img src="Fotografite\Foto\Atomic-habits.png" alt="Atomic Habits" />
-        <h3>Atomic Habits</h3>
-        <p>James Clear</p>
-      </div>
-      <div class="the-maid bestseller">
-        <img src="Fotografite\Foto\The-maid.png" alt="The maid book" />
-        <h3>The Maid</h3>
-        <p>Nita Prose</p>
-      </div>
-      <div class="davinci bestseller">
-        <img
-          src="Fotografite\Foto\Davinci-code.png"
-          alt="The Da Vinci Code book"
-        />
-        <h3>The Da Vinci Code</h3>
-        <p>Dan Brown</p>
-      </div>
-      <div class="to-kill-mockingbird bestseller">
-        <img
-          src="Fotografite\Foto\to-kill-mockingbird.png"
-          alt="To Kill a mocking bird book"
-        />
-        <h3>To Kill a mockingbird</h3>
-        <p>Harper Lee</p>
-      </div>
-      <div class="hunger-games bestseller">
-        <img src="Fotografite\Foto\hunger-games.png" alt="Hunger games book" />
-        <h3>The hunger games book</h3>
-        <p>Suzanne Collins</p>
+
+      <h2 class="me-te-shitur">Librat më të shitur:</h2>
+      <div class="bestseller-section">
+        <div class="atomic-habits first-item bestseller">
+          <img src="Fotografite\Foto\Atomic-habits.png" alt="Atomic Habits" />
+          <h3>Atomic Habits</h3>
+          <p>James Clear</p>
+        </div>
+        <div class="the-maid second-item bestseller">
+          <img src="Fotografite\Foto\The-maid.png" alt="The maid book" />
+          <h3>The Maid</h3>
+          <p>Nita Prose</p>
+        </div>
+        <div class="davinci third-item bestseller">
+          <img
+            src="Fotografite\Foto\Davinci-code.png"
+            alt="The Da Vinci Code book"
+          />
+          <h3>The Da Vinci Code</h3>
+          <p>Dan Brown</p>
+        </div>
+        <div class="to-kill-mockingbird forth-item bestseller">
+          <img
+            src="Fotografite\Foto\to-kill-mockingbird.png"
+            alt="To Kill a mocking bird book"
+          />
+          <h3>To Kill a mockingbird</h3>
+          <p>Harper Lee</p>
+        </div>
+        <div class="hunger-games fifth-item bestseller">
+          <img
+            src="Fotografite\Foto\hunger-games.png"
+            alt="Hunger games book"
+          />
+          <h3>The hunger games book</h3>
+          <p>Suzanne Collins</p>
+        </div>
       </div>
       <div class="btn-shiko-librat">
         <a href="#">Shiko të gjithë</a>
-        <img
-          src="Fotografite/SVG/arrow.svg"
-          alt="arrow svg"
-          class="arrow"
-        />
+        <img src="Fotografite/SVG/arrow.svg" alt="arrow svg" class="arrow" />
       </div>
 
       <!--Autoret me te lexuar-->
-      <h2 class="autoret-header">Autorët më të lexuar</h2>
+      <h2 class="autoret-header">Autorët më të lexuar:</h2>
       <div class="authors">
         <div class="author first-author">
           <img
@@ -127,52 +142,58 @@
           <p>Kurt Vonnegut</p>
         </div>
       </div>
-      
+
       <!--Kategorite-->
-      <h2 class="kategorite">Kategoritë</h2>
-
-      <div class="femije svg" >
-        <img src="Fotografite\SVG\Femije.svg" alt="" >
-        <a href="#">Fëmijë</a>
+      <h2 class="kategorite-header">Kategoritë</h2>
+      <div class="kategorite">
+        <div class="femije first-item svg">
+          <img src="Fotografite\SVG\Femije.svg" alt="" />
+          <a href="#">Fëmijë</a>
+        </div>
+        <div class="komedi second-item svg">
+          <img src="Fotografite\SVG\Komedi.svg" alt="" />
+          <a href="#">Komedi</a>
+        </div>
+        <div class="fiction third-item svg">
+          <img src="Fotografite\SVG\Fiction.svg" alt="" />
+          <a href="#">Fiction</a>
+        </div>
+        <div class="histori forth-item svg">
+          <img src="Fotografite\SVG\Histori.svg" alt="" />
+          <a href="#">Histori</a>
+        </div>
+        <div class="triller fifth-item svg">
+          <img src="Fotografite\SVG\Triller.svg" alt="" />
+          <a href="#">Triller</a>
+        </div>
       </div>
-      <div class="komedi svg">
-        <img src="Fotografite\SVG\Komedi.svg" alt="">
-        <a href="#">Komedi</a>
-      </div>
-      <div class="fiction svg">
-        <img src="Fotografite\SVG\Fiction.svg" alt="">
-        <a href="#">Fiction</a>
-      </div>
-      <div class="histori svg">
-        <img src="Fotografite\SVG\Histori.svg" alt="">
-        <a href="#">Histori</a>
-      </div>
-      <div class="triller svg">
-        <img src="Fotografite\SVG\Triller.svg" alt="">
-        <a href="#">Triller</a>
-      </div>
-
       <!--Zbritja-->
       <div class="sale">
-        <div class="email">          
-            <form action="#" class="email-subscribe">
-              <input type="email" name="Email" placeholder="Emaili juaj..." required>
-            </form>
-          <a class="subscribe-btn" href="#">Subscribe</a>
+        <img src="Fotografite/Foto/Zbritje.png" alt="" />
+        <div class="email">
+          <h1 class="sale-header">Njoftohuni për zbritjen javore</h1>
+          <form action="#" class="email-subscribe">
+            <input
+              type="email"
+              name="Email"
+              placeholder="Emaili juaj..."
+              required
+            />
+            <a class="subscribe-btn" href="#">Subscribe</a>
+          </form>
         </div>
-        </div>
-          
-        
+      </div>
 
       <!--Footer-->
       <footer>
-        <div class="info-kompania">
-          <img class="logo-footer" src="Fotografite/SVG/Book-Logo.svg" alt="">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit,
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem, alias adipisicing elit Lorem, ipsum.
+        <div class="info-kompania first-item">
+          <img class="logo-footer" src="Fotografite/SVG/Book-Logo.svg" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, Lorem
+            ipsum dolor sit amet consectetur adipisicing elit.
           </p>
         </div>
-        <div class="nav-footer">
+        <div class="nav-footer second-item">
           <h1>Quick Links</h1>
           <a href="index.html">Ballina</a>
           <a href="contact-us.html">Na kontaktoni</a>
@@ -180,30 +201,33 @@
           <a href="regjistrohu.html">Regjistrohu</a>
           <a href="">Librat</a>
         </div>
-        <div class="kontakti-footer">
+        <div class="kontakti-footer third-item">
           <h1>KONTAKTI</h1>
-          <p> <svg xmlns="http://www.w3.org/2000/svg" class="svg-footer" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
-            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
-          </svg> Prishtinë, Rr.Muharrem Fejza</p>
-          <p> <svg xmlns="http://www.w3.org/2000/svg" class="svg-footer" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
-          </svg> eBook@gmail.com</p>
-          <p> <svg xmlns="http://www.w3.org/2000/svg" class="svg-footer" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-            <path stroke-linecap="round" stroke-linejoin="round" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
-          </svg> +383(0)45 123 123</p>
+          <p>
+            <a href="https://goo.gl/maps/E3x7UJXbo3CHr6z97"
+              ><ion-icon name="location-outline"></ion-icon> Prishtinë,
+              Rr.Muharrem Fejza</a
+            >
+          </p>
+          <p>
+            <a href="mailto:eBook@gmail.com"
+              ><ion-icon name="mail-outline"></ion-icon> eBook@gmail.com</a
+            >
+          </p>
+          <p>
+            <a href="tel:+383(0)45 123 123"
+              ><ion-icon name="call-outline"></ion-icon> +383(0)45 123 123</a
+            >
+          </p>
         </div>
-        <div class="social-media">
- <h1>Na ndiqni në:</h1>
-<svg xmlns="http://www.w3.org/2000/svg" class="svg-social-media"width="192" height="192" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M45.4,177A95.9,95.9,0,1,1,79,210.6h0L45.8,220a7.9,7.9,0,0,1-9.8-9.8L45.4,177Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path><polyline points="80 144 112 112 144 144 176 112" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></polyline></svg>
-<svg xmlns="http://www.w3.org/2000/svg" class="svg-social-media" width="192" height="192" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><circle cx="128" cy="128" r="40" fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="16"></circle><rect x="36" y="36" width="184" height="184" rx="48" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></rect><circle cx="180" cy="76" r="12"></circle></svg>
-<svg xmlns="http://www.w3.org/2000/svg" class="svg-social-media"width="192" height="192" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M128,88c0-22,18.5-40.3,40.5-40a40,40,0,0,1,36.2,24H240l-32.3,32.3A127.9,127.9,0,0,1,80,224c-32,0-40-12-40-12s32-12,48-36c0,0-64-32-48-120,0,0,40,40,88,48Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
-<svg xmlns="http://www.w3.org/2000/svg" class="svg-social-media" width="192" height="192" fill="#000000" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"></rect><path d="M168,106a95.9,95.9,0,0,0,56,18V84a56,56,0,0,1-56-56H128V156a28,28,0,1,1-40-25.3V89.1A68,68,0,1,0,168,156Z" fill="none" stroke="#000000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"></path></svg>
-
+        <div class="social-media forth-item">
+          <h1>Na ndiqni në:</h1>
+          <ion-icon name="logo-facebook"></ion-icon>
+          <ion-icon name="logo-instagram"></ion-icon>
+          <ion-icon name="logo-twitter"></ion-icon>
+          <ion-icon name="logo-linkedin"></ion-icon>
         </div>
       </footer>
-</div>
     </div>
-
   </body>
 </html>

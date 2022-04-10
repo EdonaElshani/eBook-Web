@@ -10,9 +10,9 @@
 .container {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  grid-template-rows: auto auto 10em auto 10em auto 5em 7em auto 7em auto auto 16em; 
+  grid-template-rows: auto auto 10em auto 10em auto 5em 7em auto 7em auto auto auto;
   gap: 1.1em;
-  width: 80%;
+  width: 80vw;
   margin: auto;
   margin-top: 3em;
 }
@@ -22,6 +22,7 @@ header {
   justify-content: flex-start;
   align-items: center;
   color: #4f1f4a;
+  font-size: 1.1rem;
 }
 .logo {
   width: 5vw;
@@ -31,6 +32,7 @@ header {
   display: inline-block;
   padding: 0px 1em;
 }
+
 .nav-links a,
 .kycu,
 .regjistrohu {
@@ -60,23 +62,28 @@ header {
   font-size: 3rem;
   margin-top: 4em;
   text-transform: uppercase;
+  width: 50%;
 }
 .header-section p {
   font-size: 1rem;
   font-weight: 700;
+  width: 50%;
+}
+img {
+  max-width: 100%;
 }
 .read-more {
-
   padding: 0.8em 1em;
   color: #4f1f4a;
   border: 2px solid #4f1f4a;
   border-radius: 0.5em;
-  margin-top: .5em;
+  margin-top: 0.5em;
   display: inline-block;
   text-decoration: none;
   text-align: center;
+  z-index: 1;
 }
-.read-more:hover{
+.read-more:hover {
   background-color: #4f1f4a;
   color: #f2e5d0;
   transition: all 0.3s ease;
@@ -85,8 +92,7 @@ header {
 .ne-trend,
 .me-te-shitur,
 .autoret-header,
-.kategorite
-{
+.kategorite-header {
   grid-column: 1/6;
   font-size: 2rem;
   align-self: flex-end;
@@ -96,6 +102,7 @@ header {
 .trend-book {
   background-color: #f2e5d0;
 }
+
 .bestseller,
 .trend-book {
   border-radius: 0.5em;
@@ -103,8 +110,11 @@ header {
   height: auto;
   padding: 1.5em;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 5%);
+  display: flex;
+  flex-direction: column;
 }
-.bestseller:hover, .trend-book:hover{
+.bestseller:hover,
+.trend-book:hover {
   transform: translateY(-0.8rem);
   transition: all 0.3s ease;
 }
@@ -115,7 +125,7 @@ header {
   font-weight: bold;
   margin-top: 1em;
 }
-.trend-book a:hover, .bestseller h3:hover {
+.trend-book a:hover {
   color: #6e6d6d;
 }
 .bestseller {
@@ -125,7 +135,8 @@ header {
 .trend-book img,
 .bestseller img {
   width: 8.75em;
-  height: auto;
+  display: inline-block;
+  align-self: center;
 }
 .btn-shiko-librat {
   grid-column: 1/6;
@@ -147,15 +158,24 @@ header {
   margin-left: 5px;
 }
 .authors {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-evenly;
+  grid-column: 1/6;
+  text-align: center;
+}
+.kategorite,
+.bestseller-section,
+.popular-books {
   grid-column: 1/6;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  gap: 2em;
 }
 .author img {
   border-radius: 5em;
-  width: 158.461px;
-  height: 187.579px;
-
+  height: 25vh;
+  display: inline-block;
 }
 .author p {
   text-align: center;
@@ -164,17 +184,19 @@ header {
   font-weight: 700;
 }
 .svg {
-  box-shadow: 0px 2px 2px rgb(172, 170, 170);
-  padding: 1.5em;
+  box-shadow: 0px 1px 2px 1px rgb(200, 197, 197);
+  padding: 2em;
   text-align: center;
-  height: 260.8px;
-  width: 185px;
+  width: 12em;
   font-size: 1.5em;
   font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .svg img {
-  width: 50px;
-  height: 55.5px;
+  width: 10vw;
+  height: 6vh;
 }
 .svg a {
   margin-top: 4em;
@@ -183,49 +205,56 @@ header {
   display: inline-block;
 }
 .sale {
-  background-image: url(Fotografite/Foto/Zbritje.png);
   border-radius: 0.3em;
-  background-size: cover;
-  background-position: center;
   grid-column: 1/6;
-  width: auto;
-  height: 60vh;
-  margin-top: 2em;
+  margin-top: 5em;
   position: relative;
 }
+.sale img {
+  width: 100%;
+  height: 60vh;
+}
 .email {
-  width: auto;
-  position: absolute;
-  right: 3.5em;
-  bottom: 11em;
   display: flex;
+  position: absolute;
+  left: 60%;
+  top: 50%;
+}
+.sale-header {
+  text-transform: uppercase;
+  text-shadow: 1px 1px 2px #4f1f4a;
+  position: absolute;
+  top: -5em;
+  font-size: 1.7rem;
+  color: #4f1f4a;
 }
 .email-subscribe input[type="email"] {
-  width: 23vw;
-  height: 5vh;
+  width: 20vw;
+  padding: 0.5em;
   border-radius: 0.5em 0em 0em 0.5em;
   background-color: #f2e5d0;
-  padding-left: 1em;
-}
-.subscribe-btn {
-  background-color: #4f1f4a;
-  text-decoration: none;
-  border-radius: 0em 0.5em 0.5em 0em;
-  color: #f2e5d0;
-  padding: 0.5em;
-  border: 2px solid #4f1f4a;
+  border: 1px solid #4f1f4a;
+  outline: none;
 }
 input[type="email"]:focus {
   outline: none;
   box-shadow: 0 0 2px #4f1f4a;
 }
+
+.subscribe-btn {
+  background-color: #4f1f4a;
+  text-decoration: none;
+  border-radius: 0em 0.5em 0.5em 0em;
+  color: #f2e5d0;
+  padding: 0.6em;
+  margin-left: -4px;
+}
 footer {
-  margin-top: 1em;
+  margin-top: 2em;
   grid-column: 1/6;
   display: flex;
   color: #1e1e1e;
   justify-content: space-between;
-  padding: 1em;
   border-top: 2px solid #4f1f4a;
 }
 .logo-footer {
@@ -236,33 +265,36 @@ footer {
 .info-kompania {
   width: 20%;
   line-height: 1.5;
+  overflow: hidden;
 }
 footer a {
   display: block;
-  margin: 1em;
   color: #1e1e1e;
   text-decoration: none;
 }
-.kontakti-footer {
-  display: flex;
-  flex-direction: column;
+footer a:hover {
+  border-bottom: 1px solid #4f1f4a;
+  color: black;
+  transition: all 0.3s ease;
 }
 .kontakti-footer h1,
 .social-media h1,
 .nav-footer h1 {
   text-transform: uppercase;
 }
-.social-media {
+.social-media,
+.nav-footer,
+.kontakti-footer {
   display: flex;
   flex-direction: column;
+  justify-content: space-around;
+}
+.social-media {
   align-items: center;
 }
-.svg-footer {
-  width: 1em;
+.social-media ion-icon {
+  font-size: 1.5em;
 }
-.svg-social-media {
-  width: 2em;
-}
-.nav-footer h1 {
-  margin-left: 0.8em;
+.kontakti-footer ion-icon {
+  font-size: 1.1em;
 }
