@@ -42,6 +42,7 @@
   }
 }
 @media (max-width: 1000px) {
+
   .header-section h1 {
     font-size: 2.5rem;
     margin-top: 2em;
@@ -75,10 +76,7 @@
     margin-left: 1.5em;
     text-align: center;
   }
-  .info-kompania,
-  .social-media,
-  .kontakti-footer,
-  .nav-footer {
+  .info-kompania, .social-media, .kontakti-footer , .nav-footer{
     text-align: left;
   }
   .fifth-item {
@@ -91,6 +89,8 @@
   }
 }
 @media (max-width: 840px) {
+
+  
   .header-section {
     height: 60vh;
   }
@@ -151,19 +151,61 @@
   footer {
     font-size: 0.8rem;
   }
-
-  .email {
-    font-size: 0.8rem;
+  
+  .email{
+    font-size: .8rem;
   }
 }
 
+@media (max-width: 850px) {
+  .hamburger {
+    display: block;
+  }
+  
+  .bar{
+    width: 2rem;
+    height: 4px;
+  }
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+  }
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+  }
+  .nav-menu{
+    position: fixed;
+    left: -100%;
+    top: 5.5rem;
+    gap: 0;
+    flex-direction: column;
+    background-color: rgba(242, 229, 208, .9);
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease;
+    font-size: 1.05rem;
+  }
+  .nav-item{
+    margin: 14px 0;
+    color: white;
+  }
+  .nav-menu.active{
+    left: 0;
+  }
+  .logo {
+    width: 7vw;
+    height: 7vh;
+  }
+}
 @media (max-width: 640px) {
   .regjistrohu {
     padding: 0.5em 0.8em;
-    margin: 0em 0.5em;
+    margin: 0em .5em;
   }
   .nav-links li {
-    padding: 0.1em 0.3em;
+    padding: .1em 0.3em;
     display: block;
   }
   .logo {
@@ -184,7 +226,7 @@
   .read-more {
     padding: 0.4em 0.5em;
     margin-top: 2em;
-    font-size: 0.8rem;
+    font-size: .8rem;
   }
   .ne-trend,
   .me-te-shitur,
@@ -204,7 +246,7 @@
   .forth-item {
     width: 10em;
     margin-top: 1em;
-    margin-left: 0.5em;
+    margin-left: .5em;
   }
   footer {
     flex-wrap: wrap;
@@ -217,16 +259,16 @@
   .email {
     right: 6vw;
     bottom: 13em;
-    font-size: 0.7rem;
+    font-size: .7rem;
   }
   .svg {
     width: 30vw;
     height: 35vh;
     margin-left: 1em;
   }
-
-  .email {
-    font-size: 0.7rem;
-    left: 50%;
-  }
+  
+.email{
+  font-size: .7rem;
+  left: 50%;
+}
 }
