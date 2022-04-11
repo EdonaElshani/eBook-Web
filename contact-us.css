@@ -66,12 +66,6 @@ header {
   border-radius: 0.5em;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
-input[type="text"]:focus,
-input[type="email"]:focus,
-textarea:focus {
-  outline: none;
-  box-shadow: 0 0 3px #4f1f4a;
-}
 .contact-us h2 {
   font-size: 1.5rem;
   padding: 0.7em 0em;
@@ -109,10 +103,67 @@ textarea {
   border: 1px solid #ccc;
   background-color: white;
 }
+input[type="text"]:focus,
+input[type="email"]:focus, textarea:focus  {
+  outline: none;
+  box-shadow: 0 0 3px #4f1f4a;
+}
 textarea {
   resize: none;
 }
-.svg {
-  width: 1.5em;
-  stroke: #f2e5d0;
+.contact-us a{
+text-decoration: none;
+color: #f2e5d0
+}
+.contact-us ion-icon {
+  font-size: 1.5em;
+  color: #f2e5d0;
+}
+
+/*****FOOTER*****/
+footer {
+  margin-top: 2em;
+  display: flex;
+  color: #1e1e1e;
+  justify-content: space-between;
+  border-top: 2px solid #4f1f4a;
+}
+.logo-footer {
+  width: 5vw;
+  height: 5vh;
+  margin-top: 0.8em;
+}
+.info-kompania {
+  width: 20%;
+  line-height: 1.5;
+  overflow: hidden;
+}
+footer a {
+  display: block;
+  color: #1e1e1e;
+  text-decoration: none;
+}
+footer a:hover{
+  border-bottom: 1px solid #4f1f4a;
+  color: black;
+  transition: all 0.3s ease;
+}
+.kontakti-footer h1,
+.social-media h1,
+.nav-footer h1 {
+  text-transform: uppercase;
+}
+.social-media, .nav-footer, .kontakti-footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.social-media{
+  align-items: center;
+}
+.social-media ion-icon {
+  font-size: 1.5em;
+}
+.kontakti-footer ion-icon{
+  font-size: 1.1em;
 }
