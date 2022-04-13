@@ -216,6 +216,12 @@
     padding: 0.4em;
     margin-left: -4px;
   }
+  .btn-shiko-librat {
+    justify-self: center;
+    border-radius: 0.5em;
+    font-size: 1.3rem;
+    align-self: flex-end;
+}
 }
 
 @media (max-width: 640px) {

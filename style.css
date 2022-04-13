@@ -58,6 +58,10 @@
   text-decoration: none;
   color: #4f1f4a;
 }
+.nav-menu a:hover{
+border-bottom: solid 2px #4f1f4a;
+transition: all 0.2s ease;
+}
 .kycu, .regjistrohu {
   margin-left: auto;
 }
@@ -65,7 +69,11 @@
   background-color: #11d15f;
   color: white;
   padding: 0.5em 1em;
+  border-bottom: none;
 } 
+.nav-menu .regjistrohu:hover {
+  border-bottom: none;
+}
 .header-section {
   background-image: url(Fotografite/Foto/Header.png);
   border-radius: 0.3em;
@@ -161,7 +169,7 @@ img {
   background-color: #11d15f;
   justify-self: flex-end;
   font-size: 1.5rem;
-  font-weight: 700;
+  font-weight: 600;
   border-radius: 0.5em;
   align-self: flex-end;
   padding: 0.5em 1em;
