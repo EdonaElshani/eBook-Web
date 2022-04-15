@@ -44,50 +44,50 @@ header {
 }
 .container {
   display: grid;
-  grid-template-columns: 40fr 60fr;
+  grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   padding-top: 3em;
   margin-bottom: 5em;
-  position: relative;
 }
 .book-image {
   display: flex;
   justify-content: center;
   align-content: center;
- 
+  position: relative;
 }
 .book-image img {
+  position: absolute;
   width: 20vw;
   border-radius: 0.5em;
-  margin-left: 5em;
-  margin-top: .5em;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
-.book-image::after{
+.book-image::before,
+.book-image::after {
   content: "";
-  background-color: rgba(79, 31, 74, .2);
   display: inline-block;
-  width: 24vw;
   padding-bottom: 58vh;
   border-radius: 50%;
   position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.book-image::after {
+  background-color: rgba(79, 31, 74, 0.2);
+  width: 50%;
+  padding-bottom: 50%;
   z-index: -1;
-  left: 10em;
-  top: 4.8em;
 }
-.book-image::before{
-  content: "";
-  background-color: rgba(79, 31, 74, .1);
-  display: inline-block;
-  width: 28vw;
-  padding-bottom: 58vh;
-  border-radius: 50%;
-  position: absolute;
+.book-image::before {
+  background-color: rgba(79, 31, 74, 0.1);
+  width: 60%;
+  padding-bottom: 60%;
   z-index: -2;
-  left: 8em;
-  top: 4.8em;
 }
 .book-info p {
-  width: 60%;
+  width: 70%;
   color: #3a3a3a;
 }
 .book-info h1 {
@@ -149,7 +149,7 @@ header {
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto auto auto;
-  width: 40vw;
+  width: 50vw;
   position: absolute;
   left: 50%;
   top: 25%;
@@ -196,8 +196,6 @@ header {
   font-size: 1.5rem;
 }
 .buy {
-  width: 15vw;
-  height: auto;
   padding: 1em;
   background-color: #4f1f4a;
   border: 1px solid #f2f2f2;
@@ -214,6 +212,7 @@ header {
 footer {
   margin-top: 4em;
   min-height: 12em;
+  padding: 2em;
   display: flex;
   color: #1e1e1e;
   justify-content: space-between;
@@ -234,27 +233,29 @@ footer a {
   color: #1e1e1e;
   text-decoration: none;
 }
-footer a:hover{
+footer a:hover {
   border-bottom: 1px solid #4f1f4a;
   color: black;
-  transition: all 0.3s ease; 
+  transition: all 0.3s ease;
 }
 .kontakti-footer h1,
 .social-media h1,
 .nav-footer h1 {
   text-transform: uppercase;
 }
-.social-media, .nav-footer, .kontakti-footer {
+.social-media,
+.nav-footer,
+.kontakti-footer {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
-.social-media{
+.social-media {
   align-items: center;
 }
 .social-media ion-icon {
   font-size: 1.5em;
 }
-.kontakti-footer ion-icon{
+.kontakti-footer ion-icon {
   font-size: 1.1em;
 }
