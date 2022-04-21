@@ -30,6 +30,7 @@ header {
 .kycu,
 .regjistrohu {
   text-decoration: none;
+  color:#4f1f4a;
 }
 .cta {
   margin-left: auto;
@@ -67,8 +68,8 @@ header {
   background-color: #fff;
   position: absolute;
   display: inline-block;
-  margin-top: -30em;
-  margin-left: 34em;
+  margin-top: -24em;
+    margin-left: 27em;
   border-radius: 1em;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -96,7 +97,7 @@ input[type="password"] {
   background-color: #4f1f4a;
   color: #f2e5d0;
   border-radius: 0.5em;
-  margin: 3em 7em;
+  margin: 2em 6em;
   display: inline-block;
   text-decoration: none;
   text-align: center;
