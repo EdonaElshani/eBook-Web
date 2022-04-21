@@ -266,6 +266,8 @@
   .kategorite-header {
     font-size: 1.2rem;
     margin: 0.5em 0;
+    width: 100%;
+    text-align: center;
   }
   .kategorite,
   .bestseller-section,
