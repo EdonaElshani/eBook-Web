@@ -68,8 +68,8 @@ header {
   background-color: #fff;
   position: absolute;
   display: inline-block;
-  margin-top: -28em;
-  margin-left: 27em;
+  margin-top: -35em;
+  margin-left: 33em;
   border-radius: 1em;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -82,11 +82,11 @@ input[type="email"],
 input[type="password"],
 input[type="text"] {
   width: 80%;
-  padding: 0.8em;
+  padding: 1em;
   display: block;
   border-radius: 0.2em;
   margin: auto;
-  margin-top: 0.5em;
+  margin-top: 1em;
   border: 1px solid #ccc;
   background-color: white;
 }
@@ -100,7 +100,7 @@ input[type="text"] {
   display: inline-block;
   text-decoration: none;
   text-align: center;
-  margin: 2em 5.5em;
+  margin: 3em 7.5em;
 }
 .sign-up-box a:hover {
   background-color: #532a4f;

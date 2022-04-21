@@ -68,8 +68,8 @@ header {
   background-color: #fff;
   position: absolute;
   display: inline-block;
-  margin-top: -24em;
-    margin-left: 27em;
+  margin-top: -30em;
+  margin-left: 33em;
   border-radius: 1em;
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -82,11 +82,11 @@ header {
 input[type="email"],
 input[type="password"] {
   width: 80%;
-  padding: 0.8em;
+  padding: 1em;
   display: block;
   border-radius: 0.2em;
   margin: auto;
-  margin-top: 1em;
+  margin-top: 1.5em;
   border: 1px solid #ccc;
   background-color: white;
 }
@@ -97,7 +97,7 @@ input[type="password"] {
   background-color: #4f1f4a;
   color: #f2e5d0;
   border-radius: 0.5em;
-  margin: 2em 6em;
+  margin: 4em 7em;
   display: inline-block;
   text-decoration: none;
   text-align: center;
