@@ -9,38 +9,64 @@
   margin: 0;
   padding: 0;
 }
-header {
-  width: 75vw;
+
+.navbar {
+  grid-column: 1/6;
+  min-height: 4.5rem;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  color: #4f1f4a;
-  max-width: 1080px;
-  margin: auto;
-  margin-top: 3em;
+  padding: 0 24px;
 }
+.nav-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 1.5rem;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #4f1f4a;
+}
+
 .logo {
   width: 5vw;
   height: 5vh;
-  margin-right: 1em;
 }
-.nav-links li {
+.nav-menu li {
   display: inline-block;
   padding: 0px 1em;
-}
-.nav-links a,
-.kycu,
-.regjistrohu {
+} 
+
+.nav-menu a,
+.kycu {
   text-decoration: none;
+  color: #4f1f4a;
 }
-.cta {
+.nav-menu a:hover{
+border-bottom: solid 2px #4f1f4a;
+transition: all 0.2s ease;
+}
+.kycu, .regjistrohu {
   margin-left: auto;
 }
-.regjistrohu {
+.nav-menu .regjistrohu {
   background-color: #11d15f;
   color: white;
   padding: 0.5em 1em;
-  margin: 0em 2em;
+  border-bottom: none;
+} 
+.nav-menu .regjistrohu:hover {
+  border-bottom: none;
 }
 .container {
   display: grid;

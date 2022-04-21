@@ -89,7 +89,7 @@
     height: 40vh;
     margin-left: 1em;
   }
-  .sale{
+  .sale {
     height: 45vh;
   }
 }
@@ -199,14 +199,14 @@
     width: 7vw;
     height: 7vh;
   }
-  .sale{
+  .sale {
     height: 40vh;
   }
-  .sale-header{
+  .sale-header {
     font-size: 1.2rem;
   }
-  .email{
-    font-size: .8em;
+  .email {
+    font-size: 0.8em;
   }
   .email-subscribe input[type="email"] {
     width: 18vw;
@@ -221,7 +221,7 @@
     border-radius: 0.5em;
     font-size: 1.3rem;
     align-self: flex-end;
-}
+  }
 }
 
 @media (max-width: 640px) {
@@ -297,14 +297,15 @@
     background-image: url(Fotografite/Foto/sale-mobile.png);
     height: 45vh;
   }
-  .sale-header{
+  .sale-header {
     font-size: 1.1rem;
     margin-top: 3em;
+    text-align: center;
   }
-  .email{
-    font-size: .8em;
+  .email {
+    font-size: 0.8em;
   }
-  
+
   .email-subscribe input[type="email"] {
     width: 30vw;
     height: 4vh;
@@ -316,10 +317,35 @@
 }
 
 @media (max-width: 400px) {
+  .logo {
+    width: 12vw;
+  }
+  .header-section {
+    background-image: none;
+    background-color: #f2e5d0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+  }
   .header-section h1 {
-    font-size: 1.4rem;
-    margin-top: 1em;
-  }.author img {
+    font-size: 1.5rem;
+    padding: 0.5em;
+    width: 100%;
+    text-align: center;
+  }
+  .header-section p {
+    font-size: 1rem;
+    padding: 0.5em;
+    width: 100%;
+    text-align: center;
+  }
+  .read-more {
+    padding: 0.8em 1em;
+    margin-top: 0.5em;
+  }
+  .author img {
     height: 22vh;
   }
   .kategorite,
@@ -335,7 +361,7 @@
     margin-top: 1em;
   }
   .svg {
-    width: 32vw;
+    width: 34vw;
     height: 28vh;
     font-size: 1em;
   }
@@ -348,11 +374,11 @@
     height: 7vh;
     margin-top: 0em;
   }
-  .email{
-    font-size: .6rem;
+  .email {
+    font-size: 0.6rem;
     top: 11em;
   }
-  .sale-header{
+  .sale-header {
     font-size: 1rem;
     margin-top: 2em;
   }
@@ -363,5 +389,49 @@
   .subscribe-btn {
     padding: 0.4em;
     margin-left: -4px;
+  }
+  .sale {
+    height: 52vh;
+  }
+}
+@media (max-width: 347px) {
+  .container {
+    width: 100%;
+  }
+  .logo {
+    width: 13vw;
+  }
+  .first-item,
+  .second-item,
+  .third-item,
+  .forth-item {
+    width: 13em;
+    margin-top: 3em;
+  }
+  .svg {
+    width: 13em;
+    height: 35vh;
+    font-size: 1.1em;
+  }
+  .ne-trend,
+  .me-te-shitur,
+  .autoret-header,
+  .kategorite-header {
+    font-size: 1.5rem;
+    text-align: center;
+    margin: 0.5em 0;
+  }
+  .authors {
+    grid-template-columns: 1fr;
+  }
+  .author img {
+    height: 30vh;
+  }
+  footer .first-item,
+  footer .second-item,
+  footer .third-item,
+  footer .forth-item {
+    width: 10em;
+    margin-top: 0;
   }
 }

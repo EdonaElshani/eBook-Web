@@ -57,10 +57,10 @@
 .kycu {
   text-decoration: none;
   color: #4f1f4a;
+  border-bottom: solid 2px transparent;
 }
 .nav-menu a:hover{
 border-bottom: solid 2px #4f1f4a;
-transition: all 0.2s ease;
 }
 .kycu, .regjistrohu {
   margin-left: auto;
