@@ -268,8 +268,8 @@ img {
 
 .email-subscribe input[type="email"] {
   width: 25vw;
-  height: 5vh;
-  padding: 0.5em;
+  height: 6vh;
+  padding: 0.6em;
   border-radius: 0.5em 0em 0em 0.5em;
   background-color: #f2e5d0;
   border: 1px solid #4f1f4a;
@@ -285,7 +285,7 @@ input[type="email"]:focus {
   text-decoration: none;
   border-radius: 0em 0.5em 0.5em 0em;
   color: #f2e5d0;
-  padding: 0.5em;
+  padding: 0.6em;
   margin-left: -4px;
 }
 
